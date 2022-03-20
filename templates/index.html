@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  </head>
+  <body>
+  <section class="hero is-dark is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Random Beer App! (orig: John Rooney)
+            </h1>
+            <h2 class="subtitle">
+                Here is your <strong>beer</strong> recommendation.
+            </h2>
+        </div>
+        <br>
+        <div class="container">
+            <button class="button is-large" onclick="window.location.reload();">Click Me!</button>
+        </div>
+    </div> 
+  </section>
+  <section class="section">
+    <div class="container">
+        <div class="content is-medium">
+            <h1>{{beer.name}}</h1>
+            <p><strong>ABV: </strong>{{beer.abv}}</p>
+            <p>{{beer.description}}</p>
+            <h5>Dinner suggestion:</h5>
+            <p>{{beer.foodpair}}</p>
+        </div>
+    </div> 
+  </section>  
+  </body>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Random Beer App</strong> by John Rooney, remix by Taib.
+    </p>
+  </div>
+</footer>  
+</html>
